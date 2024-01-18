@@ -17,9 +17,10 @@
         in
         {
           devShells.default = pkgs.mkShell {
-            buildInputs = [
-              pkgs.rust-bin.stable.latest.default
-              pkgs.rust-analyzer
+            buildInputs = with pkgs; [
+              rust-bin.stable.latest.default
+              rust-analyzer
+              openiscsi
             ];
           };
         }
