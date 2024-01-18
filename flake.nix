@@ -19,6 +19,7 @@
           devShells.default = pkgs.mkShell {
             buildInputs = [
               pkgs.rust-bin.stable.latest.default
+              pkgs.rust-analyzer
             ];
           };
         }
